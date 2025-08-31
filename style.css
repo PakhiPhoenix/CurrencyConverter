@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading {
+display: flex;
+background-color: beige;
+width: 100%;
+height: 10vh;
+align-items: center;
+
+}
+
+
+
+.main_container{
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem;
+    padding: 1rem;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    margin: 1rem;
+}
+
+button{
+    margin-top: 1rem;
+}
+
+p{
+    margin-top: 1rem;
+}
