@@ -2,7 +2,7 @@ let sel1 = document.querySelector("#countryInput");
 let sel2 = document.querySelector("#countryOutput");
 let theform = document.querySelector("#theForm");
 
-let inputCountry;
+let inputCountry="USD";
 let outputCountry;
 
 for (let i = 0; i < arr.length; i++) {
@@ -36,13 +36,15 @@ theform.addEventListener("submit", function (e) {
     console.log("page submitted without reloading");
     getCurrency();
 })
-
+console.log(
+  `https://v6.exchangerate-api.com/v6/0624643e7f549a5386b0c65b/latest/${inputCountry}`
+);
 async function getCurrency() {
 
 
     try {
         const res = await fetch(
-          "https://v6.exchangerate-api.com/v6/0624643e7f549a5386b0c65b/latest/USD"
+          `https://v6.exchangerate-api.com/v6/0624643e7f549a5386b0c65b/latest/${inputCountry}`
         );
         const data = await res.json();
         console.log(data.conversion_rates[outputCountry]);
