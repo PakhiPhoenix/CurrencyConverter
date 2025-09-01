@@ -1,0 +1,6 @@
+Note Points:
+
+1. If all JS files are connected with HTML, data can be used from one to another.
+2. We can use add and appendChild method to add options in select, add gives the option of selecting the index in list as well.
+3. appendChild can be used for many elements like div, p etc.
+4. In addEventListener, we can not directly run fn with () as it will run immediately, we can use arrow fn.
