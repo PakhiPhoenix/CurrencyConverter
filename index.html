@@ -11,18 +11,21 @@
 
     <div class="main_container">
 
+        <label for="Amount" id="heading">Add amount to be converted</label>
+        <input id="Amount" placeholder="Amount">
+
         <form id="theForm">
             <select name="Input" id="countryInput">
 
             </select>
-            <label for="Country"> country</label>
+            <label for="countryInput"> Source currency</label>
 
             <select name="Output" id="countryOutput">
 
             </select>
-            <label > country</label>
-            <p id="currency rate"> 1</p>
-            <button type="submit"> Calculate amount</button>
+            <label for="countryOutput" > Target currency </label>
+            <p id="currency_rate"> Amount </p>
+            <button type="submit" id="submit_btn"> Calculate amount</button>
 
 
         </form>

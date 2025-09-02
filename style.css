@@ -28,22 +28,31 @@ align-items: center;
 .main_container{
     background-color: coral;
     display: flex;
+    box-shadow: 20px 40px 0px 10px rgba(109, 18, 220, 0.1);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20%;
 
     margin: 2rem;
-    padding: 1rem;
+    padding: 5rem;
+    padding-top: 3rem;
 
 }
-
+#heading{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 20px;
+}
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+#amount{
+    margin: 2rem;
+}
 select{
     margin: 1rem;
 }
@@ -54,4 +63,18 @@ button{
 
 p{
     margin-top: 1rem;
+}
+#submit_btn{
+    margin-top: 2rem;
+   font-size: 20px;
+   background-color: black;
+   color: white;
+}
+
+#currency_rate{
+    outline: black solid 2px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
 }
